@@ -6,7 +6,6 @@ Caeser Cipher using with different key values
 
 To encrypt and decrypt the given message by using Ceaser Cipher encryption algorithm.
 
-
 ## DESIGN STEPS:
 
 ### Step 1:
@@ -36,7 +35,6 @@ Implementation using C or pyhton code
 
 #include <stdio.h>
 #include <stdlib.h>
-
 // Function to perform Caesar Cipher encryption
 void caesarEncrypt(char *text, int key) {
     for (int i = 0; text[i] != '\0'; i++) {
@@ -52,13 +50,11 @@ void caesarEncrypt(char *text, int key) {
         // Ignore non-alphabetic characters
     }
 }
-
 // Function to perform Caesar Cipher decryption
 void caesarDecrypt(char *text, int key) {
     // Decryption is the same as encryption with a negative key
     caesarEncrypt(text, -key);
 }
-
 int main() {
     char message[100];  // Declare a character array to store the message
     int key;
